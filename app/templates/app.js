@@ -1,9 +1,6 @@
-(function () {
-  "use strict";
-  angular.module("<%= appname %>", [
-    'ngRoute'
-  ])
-    .config(function ($routeProvider) {
+(function(app) {
+
+    app.config(function ($routeProvider) {
       $routeProvider
         .when('/', {
           templateUrl: "common/views/main.html"
@@ -15,4 +12,13 @@
           redirectTo: '/not-found'
         });
     });
-})();
+
+    app.run(function () {});
+
+    app.controller('AppController', function ($scope) {
+
+    });
+
+}(angular.module("<%= appname %>", [
+    'ngRoute',
+])));

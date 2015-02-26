@@ -17,7 +17,7 @@
     <!-- endbuild -->
     <% if (includeModernizr) { %>
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild --><% } %>
   </head>
   <body <% if(includeAngular) { %> ng-app="<%= appname %>" <%}%>>
@@ -33,7 +33,7 @@
         <% if (includeModernizr) { %><li>Modernizr</li><% } %>
         <% if (includeBourbon) { %><li>Bourbon & Neat</li><% } %>
         <% if (includeUnderscore) { %><li>UnderscoreJS</li><% } %>
-      
+
       </ul>
       <p>Don't forget to update your readme file!!</p>
     </div>

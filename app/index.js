@@ -143,7 +143,6 @@ AppGenerator.prototype.app = function () {
   this.mkdir('app/styles');
   this.mkdir('app/images');
   this.write('app/index.html', this.indexFile);
-  // this.write('app/app.js', 'console.log(\'The Iron Yard Rocks\');');
 };
 
 AppGenerator.prototype.install = function () {
