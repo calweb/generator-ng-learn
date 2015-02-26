@@ -1,0 +1,39 @@
+{
+  "name": "generator-ng-learn",
+  "version": "0.0.10",
+  "description": "Yeoman generator for learning angular",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "calweb/generator-ng-learn",
+  "author": {
+    "name": "Calvin Webster",
+    "email": "calweb@gmail.com",
+    "url": "https://github.com/calweb"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "cheerio": "^0.16.0",
+    "wiredep": "^1.4.3",
+    "chalk": "~0.4.0",
+    "yosay": "^0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0",
+    "generator-mocha": ">=0.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+<div class="hero-unit">
+  <h1>'Allo, 'Allo!</h1>
+  <p>You now have</p>
+  <ul>
+    <li>HTML5 Boilerplate</li>
+    <li>Normalize CSS</li>
+    <% if (includeSass) { %><li>Sass</li><% } %>
+    <% if (includeModernizr) { %><li>Modernizr</li><% } %>
+    <% if (includeBourbon) { %><li>Bourbon & Neat</li><% } %>
+    <% if (includeUnderscore) { %><li>UnderscoreJS</li><% } %>
+     <li>AngularJS</li>
+  </ul>
+  <p>Don't forget to update your readme file!!</p>
+</div>
+<div ng-controller="MainCtrl as main">
+  <article class="hero" ng-repeat="hero in main.heros">
+    <h3>{{hero.name}}</h3>
+    <img src="{{hero.photo}}" alt="{{hero.name}}">
+  </article>
+</div>
