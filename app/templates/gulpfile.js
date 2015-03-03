@@ -89,7 +89,7 @@ gulp.task('wiredep', function () {
 <% } %>
   gulp.src('app/*.html')
     .pipe(wiredep({
-      directory: 'bower_components'
+      directory: 'app/bower_components'
     }))
     .pipe(gulp.dest('app'));
 });
